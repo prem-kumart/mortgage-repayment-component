@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+
+@theme {
+
+
+   --font-PlusJakartaSans : "PlusJakartaSans" ,"sans-serif";
+
+   --color-lime-custom :  hsl(61, 70%, 52%);
+   --color-slate-900 : hsl(202, 55%, 16%);
+   --color-slate-700 : hsl(200, 24%, 40%);
+   --color-slate-500 : hsl(200, 26%, 54%);
+   --color-slate-300 : hsl(203, 41%, 72%);
+   --color-slate-100 : hsl(202, 86%, 94%);
+   --color-white     : hsl(0, 0%, 100%);
+   --color-red       : hsl(4, 69%, 50%);
+  
+}
+
+@font-face {
+  font-family: PlusJakartaSans;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/assets/fonts/static/PlusJakartaSans-Bold.ttf") format("ttf"),
+       url("/assets/fonts/static/PlusJakartaSans-Medium.ttf") format("ttf")
+    
+
+}
+
+@layer utilities {
+ 
+    .text-preset-one {
+        font-size : 56px; 
+        font-weight: 700;
+        line-height: 125%;
+        letter-spacing:1px;
+    }
+
+      .text-preset-two {
+        font-size : 24px; 
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing:1px;
+      
+    }
+      .text-preset-three {
+        font-size : 18px; 
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing:1px;
+      
+    }
+    .text-preset-four {
+      font-size : 16px; 
+      font-weight: 400;
+      line-height: 125%;
+      letter-spacing:0px;
+
+    }
+    .text-preset-five {
+      font-size : 14px; 
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing:0px;
+
+    }
+
+}
