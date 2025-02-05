@@ -97,7 +97,7 @@ const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
   }
 
   return (
-    <section className="flex flex-col px-6 py-8 sm:p-10 flex-1">
+    <section className="flex flex-col px-6 py-8 sm:p-10 flex-1 ">
     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center items-start gap-2">
         <h1 className="text-preset-two text-slate-900 ">Mortgage Calculator</h1>
         <a className="text-preset-four text-slate-700 underline underline-offset-4 cursor-pointer" onClick={resetInputFields}>Clear All</a>
