@@ -17,12 +17,18 @@ const Radio = ({title,id,group,mortgageType,setMortgageType}) => {
        setMortgageType(newCheckedMortage);    
   }
 
+   if(!mortgageType[id] && radioElement.current) {
+       radioElement.current.checked=false;
+   }
+
+
+
 
 
 
   return (
-    <label className={`flex flex-row justify-items-start gap-4 border-1  rounded-sm p-3  ${mortgageType[id] ? "border-lime-custom bg-lime-custom/15" : "border-slate-400"}`}>
-         <input className="bg-slate-700" type="radio" ref={radioElement} id={id} name={group} onChange={radioButtonOnChange}/>
+    <label className={`flex flex-row justify-items-start gap-4 border-1  rounded-sm p-3  cursor-pointer ${mortgageType[id] ? "border-lime-custom bg-lime-custom/15" : "border-slate-400"}`}>
+         <input className="bg-slate-700 " type="radio" ref={radioElement} id={id} name={group} onChange={radioButtonOnChange}/>
          <p className="text-slate-900 text-preset-three">{title}</p>
     </label>
    
