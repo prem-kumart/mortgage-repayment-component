@@ -10,8 +10,8 @@ function App() {
   const [totalRepayment, setTotalRepayment] = useState(0);
 
   return (
-      <main className='sm:flex  sm:justify-center sm:items-center bg-slate-100 w-screen h-screen min-h-[606px]'>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-row-1 sm:gap-0 bg-white  sm:rounded-3xl  sm:shadow-xl sm:w-[68%] sm:h-[94%] lg:w-[86%] lg:h-[65%] lg:max-w-[1008px] lg:min-h-[606px] lg:max-h-[606px]  ">
+      <main className='sm:flex sm:justify-center sm:items-center bg-slate-100 w-screen h-screen sm:min-h-[988px] lg:min-h-[702px]'>
+        <div className="flex flex-col lg:flex-row  sm:gap-0 bg-white  sm:rounded-3xl  sm:shadow-xl sm:max-w-[688px]  lg:max-w-[1008px] lg:h-auto">
              <Form setMonthlyRepayment={setMonthlyRepayment} setTotalRepayment={setTotalRepayment}/>
              <Results monthlyRepayment={monthlyRepayment} totalRepayment={totalRepayment}/>
         </div>

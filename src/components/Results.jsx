@@ -11,7 +11,7 @@ const Results = ({monthlyRepayment,totalRepayment }) => {
   
   
 
-  return  ( monthlyRepayment==0 ? <EmptyResults/> : <section className="flex flex-col px-4 sm:p-10 py-5 gap-4  sm:rounded-b-3xl lg:rounded-r-3xl  lg:rounded-bl-[60px] bg-slate-900 ">
+  return  ( monthlyRepayment==0 ? <EmptyResults/> : <section className="flex-1 flex flex-col px-4 sm:p-10 py-5 gap-4  sm:rounded-b-3xl lg:rounded-r-3xl  lg:rounded-bl-[60px] bg-slate-900 ">
        <h2 className="text-white text-preset-two">
          Your Results
        </h2>

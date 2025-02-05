@@ -13,8 +13,6 @@ const InputSuffix = ({id,title,value,setValue,suffix,error}) => {
        setInputFocused(false)
     }
     
-  
-
 
   return (
        <div>

@@ -22,10 +22,6 @@ const Radio = ({title,id,group,mortgageType,setMortgageType}) => {
    }
 
 
-
-
-
-
   return (
     <label className={`flex flex-row justify-items-start gap-4 border-1  rounded-sm p-3  cursor-pointer ${mortgageType[id] ? "border-lime-custom bg-lime-custom/15" : "border-slate-400"}`}>
          <input className="bg-slate-700 " type="radio" ref={radioElement} id={id} name={group} onChange={radioButtonOnChange}/>

@@ -98,25 +98,18 @@ const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
   }
 
   return (
-    <section className="flex flex-col px-6 py-8 sm:p-10">
+    <section className="flex flex-col px-6 py-8 sm:p-10 flex-1">
     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center items-start gap-2">
         <h1 className="text-preset-two text-slate-900 ">Mortgage Calculator</h1>
         <a className="text-preset-four text-slate-700 underline underline-offset-4 cursor-pointer" onClick={resetInputFields}>Clear All</a>
     </div> 
     <form onSubmit={formSubmit} className="flex flex-col gap-6 mt-6">
-        <div>
-              <InputPrefix id="amount" title="Mortgage Amount" value={amount} setValue={setAmount} error={errors.amount}/>
-              {/* { errors.amount && <p className="text-red ">This field is required</p>} */}
-        </div>
+  
+        <InputPrefix id="amount" title="Mortgage Amount" value={amount} setValue={setAmount} error={errors.amount}/>
+           
         <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
-            <div className="flex flex-col">
             <InputSuffix id="term" title="Mortagage Term" value={term} setValue={setTerm}  suffix="years" error={errors.term}/>
-            {/* { errors.term && <p className="text-red ">This field is required</p>} */}
-            </div>
-            <div className="flex flex-col">
             <InputSuffix id="interest_rate" title="Interest Rate" value={interest} setValue={setInterest} suffix="%" error={errors.interest}/>
-            {/* { errors.interest && <p className="text-red ">This field is required</p>} */}
-            </div>
         </div>
         <div className="flex flex-col gap-3 lg:gap-3" >
             <h2 className="text-preset-four text-slate-700">Mortage Type</h2>
