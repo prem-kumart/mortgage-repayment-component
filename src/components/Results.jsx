@@ -1,11 +1,10 @@
 import EmptyResults from "./EmptyResults";
-import EmpltyResults from "./EmptyResults";
 
+// eslint-disable-next-line react/prop-types
 const Results = ({monthlyRepayment,totalRepayment }) => {
 
 
   function toEur(number){
-
     return new Intl.NumberFormat('en-GB', { style:"currency", currency: 'GBP'}).format(number)
   }
   

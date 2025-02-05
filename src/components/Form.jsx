@@ -4,6 +4,7 @@ import Button from "./Button";
 import InputPrefix from './InputPrefix.jsx';
 import InputSuffix from './InputSuffix.jsx';
 
+// eslint-disable-next-line react/prop-types
 const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
     const [amount,setAmount] = useState('');
     const [term,setTerm] = useState('');
@@ -24,6 +25,8 @@ const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
       setInterest('');
       setMortgageType({repayment:false,interest_only:false})
       setErrors({amount:false, term:false, interest:false,mortgagetype:false})
+      setMonthlyRepayment(0);
+      setTotalRepayment(0);
   }
         
     
@@ -33,9 +36,6 @@ const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
      setErrors({amount:false, term:false, interest:false,mortgagetype:false})
      
     
-
-     console.log(errors)
-     console.log(amount,term,interest)
 
      //Manual Validation
      if(amount === "" ){
@@ -65,7 +65,6 @@ const Form = ({setMonthlyRepayment,setTotalRepayment}) => {
 
 
      if(errorStates.amount || errorStates.term || errorStates.mortgagetype || errorStates.interest){
-       console.log(errorStates)
        setErrors(errorStates)
        return;
      }

@@ -7,12 +7,12 @@ const InputPrefix = ({id,title,value,setValue,error}) => {
   
   function inputElementFocused(){
      setInputFocused(true)
-     console.log(inputFocused)
+  
   }
 
   function inputElementBlur(){
      setInputFocused(false)
-     console.log(inputFocused)
+  
   }
   
   

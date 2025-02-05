@@ -1,5 +1,4 @@
 
-
 const EmptyResults = () => {
   return (
     <section className="flex-1 flex flex-col justify-center items-center gap-4 p-8 sm:p-10  sm:rounded-b-3xl lg:rounded-r-3xl  lg:rounded-bl-[60px] bg-slate-900">
